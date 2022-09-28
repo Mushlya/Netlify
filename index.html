@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-8 p-5">
+        <font style="font-size: 12px; padding-left: 25px"
+          >Open source code, by Olga Cunnane</font
+        >
+      </div>
+
+      <div class="col p-5" id="r1c2">
+        <form class="search-form" id="search-form">
+          <div class="col-8">
+            <input
+              type="input"
+              class="form-control"
+              id="city-input"
+              placeholder="Enter city"
+            />
+            <input type="submit" class="btn btn-primary w-100" value="Search" />
+            <button class="btn btn-success w-100" id="current-location-button">
+              Weather where I am
+            </button>
+          </div>
+        </form>
+
+        <ul style="list-style-type: none">
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li style="font-weight: bold">Weather details</li>
+          <li id="CloudCover"></li>
+          <li id="Humidity"></li>
+          <li id="Wind"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 p-5" id="r2c1">
+        <ul style="list-style-type: none">
+          <li id="city"></li>
+          <li id="dayTime"></li>
+          <li id="temperature">
+            <span id="temperature-degree" style="font-size: 50px"></span>
+            <span id="temperature-scale">°C</span>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#" id="c-link">°C</a>
+            | <a href="#" id="f-link">°F</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

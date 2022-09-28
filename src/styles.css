@@ -1,0 +1,46 @@
+h1 {
+  color: blue;
+}
+
+#city {
+  font-size: 50px;
+}
+
+body {
+  background-image: url("/images/Lightning.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#r1c2 {
+  line-height: 40px;
+  backdrop-filter: blur(20px);
+}
+
+#r2c1 {
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background: #6443ea;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+#r2c2 {
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+  backdrop-filter: blur(20px);
+}
+
+hr {
+  height: 1px;
+  background-color: silver;
+  border: none;
+}
